@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="">
+        <title>Songs For Spoken Words</title>
+        <script src="http://use.edgefonts.net/neuton.js"></script>
+<script src="http://use.edgefonts.net/poiret-one.js"></script>
+ <script type="text/javascript" src="res/jq152.js"></script>
+        <link type="text/css" rel="stylesheet" href="res/sfsw2.css">
+    
+        <link rel="stylesheet" href="add2home/style/add2home.css">
+<script type="application/javascript" src="add2home/src/add2home.js"></script>
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"/>   
+    
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(2000);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+    </head>
+    <body>
+<div id="container">
+
+                  <div id="poem">
+<h1>Songs For Spoken Words</h1>
+<p>Words by Michael Frearson</p>
+<p>Music by Richard J. Birkin</p>
+<br /><br />
+<a href="thatnight.html" class="transition">1. That Night (1'43")</a><br /><br />
+<a href="parts.html" class="transition">2. Parts (3'00")</a><br /><br />
+<a href="danni.html" class="transition">3. Danni (1'22")</a><br /><br />
+<a href="goodbye.html" class="transition">4. Goodbye (3'07") </a>
+</div>
+</div>    
+    </body>
+</html>
