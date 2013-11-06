@@ -62,6 +62,7 @@ body {
 
 #container {
 width: 100%;
+display:inline-block;
 min-width:300px;
 padding-top:0%;
 padding-bottom:20%;
@@ -70,6 +71,18 @@ background-color: #F8F8FF;
 float:left;
 min-height:100%;
 }
+
+#indexcontainer {
+width: 100%;
+display:inline-block;
+padding-top:0%;
+padding-bottom:20%;
+margin-bottom:0px;
+background-color: #F8F8FF;
+float:left;
+min-height:100%;
+}
+
 
 * html #container {
 height:100%;
@@ -86,6 +99,42 @@ font-size: 1.2em;
 font-family: 'Libre Baskerville', sans-serif;
 }
 
+#title {
+width:80%;
+margin-left:10%;
+margin-right:10%;
+text-align:center;
+}
+
+#tracks {
+width:auto;
+display:block;
+margin-left:auto;
+margin-right:auto;
+padding-top:15%;
+text-align:left;
+font-family: 'Helvetica', sans-serif;
+}
+
+table {
+display:table;
+margin-left:auto;
+margin-right:auto;
+}
+
+tr {
+width:100%;
+line-height:20px;
+}
+
+td {
+padding-left:15px;
+}
+
+tr.clickableRow { 
+cursor: pointer; 
+} 
+
 
 #links {
     position: absolute;
@@ -98,8 +147,6 @@ font-family: 'Libre Baskerville', sans-serif;
 p {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.2em;
-    position: relative;
-    width: 400px;
     overflow: hidden;
 }
 

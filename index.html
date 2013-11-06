@@ -32,21 +32,55 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+
+jQuery(document).ready(function($) {
+      $(".clickableRow").click(function() {
+            window.document.location = $(this).attr("href");
+      });
+});
 </script>
 <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
     </head>
     <body>
-<div id="container">
+<div id="indexcontainer">
 
-                  <div id="poem">
+                  <div id="title">
 <h1>Songs For Spoken Words</h1>
 <p>Words by Michael Frearson</p>
 <p>Music by Richard J. Birkin</p>
-<br /><br />
-<a href="thatnight.html" class="transition">1. That Night (1'43")</a><br /><br />
-<a href="parts.html" class="transition">2. Parts (3'00")</a><br /><br />
-<a href="danni.html" class="transition">3. Danni (1'22")</a><br /><br />
-<a href="goodbye.html" class="transition">4. Goodbye (3'07") </a>
+<div id="tracks">
+<table>
+<tr>
+<td>1.</td>
+<td>Being That Person</td>
+<td>(3'01")<td>
+</tr>
+
+<tr class="clickableRow" href="thatnight.html">
+<td>2.</td>
+<td>That Night</td>
+<td>(1'43")</td>
+</tr>
+
+<tr class="clickableRow" href="parts.html">
+<td>3.</td>
+<td>Parts</td>
+<td>(3'00")</td>
+</tr>
+
+<tr class="clickableRow" href="danni.html">
+<td>4.</td>
+<td>Danni used to</td>
+<td>(1'22")</td>
+</tr>
+
+<tr class="clickableRow" href="goodbye.html">
+<td>5.</td>
+<td>Goodbye</td>
+<td>(1'22")</td>
+</tr>
+
+</div>
 </div>
 </div>    
     </body>
